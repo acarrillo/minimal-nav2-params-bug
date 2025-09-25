@@ -1,5 +1,7 @@
 # `nav2` `planner_plugins` list order bug
 
+https://github.com/ros-navigation/navigation2/issues/5550
+
 ## Overview
 
 This repo presents a minimal test case for exercising a bug I have found in the nav2 `planner_server`'s ingestion of ROS parameters
