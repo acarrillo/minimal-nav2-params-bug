@@ -62,3 +62,7 @@ This demonstrates that the order of plugins in the `planner_plugins` parameter l
 6. Run the bad plan example: `nav2_bug_repro_pkg demo.launch.py mode:=bad`
 
 For visualization, I used Foxglove; I have provided foxglove_bridge in my minimal example for that purpose, and the `make shell` target will forward ports accordingly. I publish `/map`, `/plan`, and `/goal_poses` for visualization.
+
+I have provided a `/trigger_path_request` service that will trigger the `ComputePathThroughPoses` call.
+
+You can see my good versus bad param config files [here](https://github.com/acarrillo/minimal-nav2-params-bug/tree/main/nav2_bug_repro_pkg/config), and my script for calling `ComputePathThroughPoses` [here](https://github.com/acarrillo/minimal-nav2-params-bug/blob/main/nav2_bug_repro_pkg/scripts/path_request_node.py).
