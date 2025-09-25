@@ -60,3 +60,5 @@ This demonstrates that the order of plugins in the `planner_plugins` parameter l
 4. Build the example: `make build`
 5. Run the good plan example: `nav2_bug_repro_pkg demo.launch.py mode:=good`
 6. Run the bad plan example: `nav2_bug_repro_pkg demo.launch.py mode:=bad`
+
+For visualization, I used Foxglove; I have provided foxglove_bridge in my minimal example for that purpose, and the `make shell` target will forward ports accordingly. I publish `/map`, `/plan`, and `/goal_poses` for visualization.
